@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>碳中和投资提示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    .message {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    你们的碳足迹很重要！🌍 在中国，每人每月排放0.65吨二氧化碳，但你们只需投资一个三明治的价格，就能通过植树或绿色能源来抵消。小小支持，成就大改变——让我们共同投资更清洁的未来！🌱💚 #碳中和 #可持续未来
+  </div>
+  <button id="investBtn">立即投资</button>
+
+  <script>
+    document.getElementById('investBtn').addEventListener('click', function () {
+      // 记录点击次数
+      let count = localStorage.getItem('investCount') || 0;
+      count++;
+      localStorage.setItem('investCount', count);
+
+      // 返回 Creamer 页面
+      window.location.href = 'https://www.credamo.com/#/help/web/4?page_id=416';
+    });
+  </script>
+</body>
+</html>
+
+    <script>
+        // 统计点击量（本地存储示例）
+        let clickCount = localStorage.getItem('investmentClicks') || 0;
+        
+        function handleInvestment() {
+            // 点击量+1
+            clickCount++;
+            localStorage.setItem('investmentClicks', clickCount);
+            
+            // 模拟跳转（替换为实际返回链接）
+            alert(`感谢投资！点击次数：${clickCount}`);
+            window.location.href = "https://www.credamo.com/#/return";
+        }
+    </script>
+</body>
+</html>
